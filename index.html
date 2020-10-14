@@ -33,6 +33,7 @@
  yam.connect.embedFeed({
  "feedType": "home",
  "container": "#embed-1",
+ "useNewYammer": false,
  });
  yam.connect.embedFeed({
  "feedType": "home",
@@ -44,6 +45,7 @@
  "feedType": "group",
  "feedId": 870956,
  "container": "#embed-3",
+ "useNewYammer": false,
  config: {
  	promptText: "Post to the Yammer team",
  	hideNetworkName: true
@@ -64,6 +66,7 @@
  "feedType": "user",
  "feedId": 4606369,
  "container": "#embed-5",
+ "useNewYammer": false,
  config: {
  	header: false
   }
@@ -82,8 +85,10 @@
  "feedType": "topic",
  "feedId": 53906,
  "container": "#embed-7",
+ "useNewYammer": false,
   config: {
- 	footer: false
+ 	footer: false,
+ 	theme: 'dark'
   }
  });
  yam.connect.embedFeed({
@@ -99,6 +104,7 @@
 yam.connect.embedFeed({
  "feedType": "open-graph",
  "container": "#embed-9",
+ "useNewYammer": false,
  objectProperties: {
  	url: 'https://www.microsoft.com/en-us/',
  	type: 'page'
