@@ -7,7 +7,7 @@
  <style>
  .container {
  display: grid;
- height: 3200px;
+ height: 4000px;
  grid-template-columns: 1fr 1fr;
  column-gap: 20px;
  grid-row-gap: 20px
@@ -24,6 +24,8 @@
  <div id="embed-6"></div>
  <div id="embed-7"></div>
  <div id="embed-8"></div>
+ <div id="embed-9"></div>
+ <div id="embed-10"></div>
  </div>
  <script type="text/javascript" src="https://c64.assets-yammer.com/assets/platform_embed.js"></script>
  <script type="text/javascript">
@@ -31,18 +33,17 @@
  yam.connect.embedFeed({
  "feedType": "home",
  "container": "#embed-1",
- "useNewYammer": true
  });
  yam.connect.embedFeed({
  "feedType": "home",
- "container": "#embed-2"
+ "container": "#embed-2",
+ "useNewYammer": true,
  });
  // group embed
  yam.connect.embedFeed({
  "feedType": "group",
  "feedId": 870956,
  "container": "#embed-3",
- "useNewYammer": true,
  config: {
  	promptText: "Post to the Yammer team",
  	hideNetworkName: true
@@ -52,6 +53,7 @@
  "feedType": "group",
  "feedId": 870956,
  "container": "#embed-4",
+ "useNewYammer": true,
   config: {
  	promptText: "Post to the Yammer team",
  	hideNetworkName: true
@@ -62,7 +64,6 @@
  "feedType": "user",
  "feedId": 4606369,
  "container": "#embed-5",
- "useNewYammer": true,
  config: {
  	header: false
   }
@@ -71,6 +72,7 @@
  "feedType": "user",
  "feedId": 4606369,
  "container": "#embed-6",
+ "useNewYammer": true,
  config: {
  	header: false
   }
@@ -80,7 +82,6 @@
  "feedType": "topic",
  "feedId": 53906,
  "container": "#embed-7",
- "useNewYammer": true,
   config: {
  	footer: false
   }
@@ -89,9 +90,27 @@
  "feedType": "topic",
  "feedId": 53906,
  "container": "#embed-8",
+ "useNewYammer": true,
  config: {
  	footer: false
   }
+ });
+yam.connect.embedFeed({
+ "feedType": "open-graph",
+ "container": "#embed-9",
+ objectProperties: {
+ 	url: 'https://www.microsoft.com/en-us/',
+ 	type: 'page'
+ }
+ });
+ yam.connect.embedFeed({
+ "feedType": "open-graph",
+ "container": "#embed-10",
+ "useNewYammer": true,
+ objectProperties: {
+ 	url: 'https://www.microsoft.com/en-us/',
+ 	type: 'page'
+ }
  });
  </script>
  </body>
